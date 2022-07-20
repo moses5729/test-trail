@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Html forms</title>
+	<script type="text/javascript">
+		const greeting = function(){
+			alert('Thsnk you for banking with us!')
+      	}
+
+          function myFunction() {
+          var x = document.getElementById("myInput");
+          if (x.type === "password") {
+          	x.type = "text";
+          } else {
+          	x.type = "password"
+          }
+           }
+	</script>
+	<style type="text/css">
+		body{
+			background-image: url(img/ani-4.jpg);
+			background-size: 85%;
+		}
+		h1,h2{
+			background-color:white;
+		}
+		.bio{
+			margin-bottom: 10px;
+		}
+		.fi{
+			border-radius: 10px;
+		}
+	</style>
+</head>
+<body>
+	<form action="https://www.torilo.co.uk/student-info.js" autocomplete ="on"method="POST">
+		<h2>Torilo student Registeration</h2>
+		<fieldset>
+			<legend>Bio</legend>
+			<label for="first">first name:</label>
+		    <input class="bio fi" type="text" name="fn" id="first">
+		    <label for="last">last name:</label>
+		    <input class="bio" type="text" name="ln" id="last">
+		    <label for="dob">Time of Birth</label>
+		    <input type="datetime-local" name="" id="dob">
+		    <br><br>
+		    <span>Gender</span>
+	        <input type="radio" name="gender" id="gender" value="male">
+	     	<label for="male">male</label>
+	    	<input type="radio" name="gender" id="gender" value="female">
+		    <label for="female">female</label>
+		    <input type="radio" name="gender" id="gender" value="agenda">
+		    <label for="agender">agenda</label>
+		</fieldset>
+		<br><br>
+		<fieldset>
+		<legend>How many dependant do you have ?</legend>
+		<input type="checkbox" name="dependant" id="one" value="1">
+		<label for="one">1</label>
+		<input type="checkbox" name="dependant" id="two" value="2">
+		<label for="two">2</label>
+		<input type="checkbox" name="dependant" id="three" value="3">
+		<label for="three">3</label>
+		<input type="checkbox" name="dependant" id="more" value=">3">
+		<label for="more">more</label>
+		<br><br>
+		<label>Email:</label>
+		<input type="email" name="" class="fi">
+		
+        <h3>chose your blood group: </h3>
+        <label for="bg" nam>Blood Groups: </label>
+        <select id="bg" name="blood_group">
+        	<option value="1">AB+</option>
+        	<option value="2">O-</option>
+        	<option value="3">O+</option>
+        	<option value="4">B+</option>
+        	<option value="5">JS</option>
+        </select>
+        </fieldset> 
+        <br>
+        <fieldset>
+	        <legend>Tell us a little about yourself</legend>
+	        <label for="ta">write here:</label><textarea class="fi" id="ta" name="about"
+	        rows=10 cols="20"></textarea>
+	        <br><br>
+	        <h4>What is your favourite food?</h4>
+	        <datalist id="food" class="fi">
+		        <option value="Amala"/>
+		        <option value="Oporopo"/>
+		        <option value='Tuwo shinkafi'/>
+		        <option value="Eba"/>
+		     </datalist>
+		     <input list="food">
+
+		     <h3>Create a username and password</h3>
+		     <label for="username">Username</label>
+		     <input type="text" name=""id="username" class="fi">
+
+		     <label for="myInput">Password</label>
+		     <input type="password" id="myInput" class="fi">
+		     <input type="checkbox" onclick="myFunction()">Show Password
+        </fieldset>
+        <label for="reset">Reset your inputs;</label>
+        <input type="reset" id="reset"><br><br>
+        <button onclick="greeting()">submit</button>
