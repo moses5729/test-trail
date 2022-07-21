@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML Tables</title>
+	<style type="text/css">
+		table.first, table.first th, table.first td{
+			border: 1px solid black;
+		} 
+		table.second, table.second td{
+			border-collapse: collapse;
+			background: #88d18d;
+			border-radius: 10px;
+		}
+		table.second td{
+			border: 1px sloid black;
+		}
+		table.third table.third td table.third{
+			border: 1px solid black;
+			border-collapse: collapse;
+			text-align: center;
+		}
+
+
+		table.third tr:nth_child(odd){
+			background: #2299c3;
+		}
+		table.third tr:nth_child(odd){
+			background: #2299c3;
+		}
+		 
+		 table.third td:nth_child(even){
+		 	background: #2299c3;
+		 }
+
+	</style>
+</head>
+<body>
+	<table class="first">
+		<tr>
+			<th>Matric.</th>
+			<td>001</td>
+			<td>002</td>
+			<td>003</td>
+			<td>004</td>
+		</tr>
+		<tr>
+			<th>Names</th>
+			<td>Ezekiel</td>
+			<td>Emmanuel</td>
+			<td>Olamide</td>
+			<td>Temitope</td>
+		</tr>
+		<tr>
+			<th>Genders</th>
+			<td>Male</td>
+			<td>Female</td>
+			<td>Male</td>
+			<td>Trans</td>
+	
+		</tr>
+	</table><br><br>
+
+
+	<table class="second" style="width:100%;">
+		<tbody>
+			<tr>
+				<th>Matric</th>
+				<th>Names</th>
+				<th>Gender</th>
+			</tr>
+			<tr>
+				<td>001</td>
+				<td>Ezekiel</td>
+				<td>Male</td>
+			</tr>
+			<tr>
+				<td>002</td>
+				<td>Emmanuel</td>
+				<td>Female</td>
+			</tr>
+			<tr>
+				<td>003</td>
+				<td>Olamide</td>
+				<td>Male</td>
+			</tr>
+			<tr>
+				<td>004</td>
+				<td>Temitope</td>
+				<td>Trans</td>
+			</tr>
+		</tbody>
+	</table><br><br>
+
+	<table class="third" style="width:100%;">
+		<tr>
+			<th></th>
+			<th>8:00-8:40</th>
+			<th>8:40-9:20</th>
+			<th>9:20-10:00</th>
+		</tr>
+		<tr>
+			<th>Monday</th>
+			<td>Math</td>
+			<td>Quantitative reasoning</td>
+			<td>Spelling Bee</td>
+		</tr>
+		<tr>
+			<th>Tuesday</th>
+			<td>Verbal reasoning</td>
+			<td>Language</td>
+			<td>Home Econs</td>
+		</tr>
+		<tr>
+			<th>Wednesday</th>
+			<td>Sport</td>
+			<td>Maths</td>
+			<td>Religion</td>
+		</tr>
+		<tr>
+			<th>Thusday</th>
+			<td>Dining</td>
+			<td>Science laboratory</td>
+			<td>Party</td>
+		</tr>
+		<tr>
+			<th>Friday</th>
+			<td>Counselling</td>
+			<td>Biology</td>
+			<td>Prom</td>
+		</tr>
+	</table>
+		</body>
+</html>
